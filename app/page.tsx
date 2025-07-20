@@ -2,23 +2,8 @@ export default function Home() {
   // return () 裡面的即是用於表達網頁內容的HTML標籤
   return (
     <>
-      {/* Header */}
-      <header className="bg-black text-white py-6">
-        <div className="container mx-auto px-6">
-          <nav className="flex justify-between items-center">
-            <h1 className="text-3xl font-bold">John Doe</h1>
-            <ul className="flex space-x-8">
-              <li><a href="#about" className="hover:text-orange-400 transition-colors">關於我</a></li>
-              <li><a href="#skills" className="hover:text-orange-400 transition-colors">技能</a></li>
-              <li><a href="#portfolio" className="hover:text-orange-400 transition-colors">作品集</a></li>
-              <li><a href="#contact" className="hover:text-orange-400 transition-colors">聯絡</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="bg-gray-900 text-white py-20">
+      {/* Header Section */}
+      <header className="bg-gray-900 text-white py-20">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto">
             <img 
@@ -34,10 +19,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="aboutSection" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-black">關於我</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -79,7 +64,7 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-100">
+      <section id="skillsSection" className="py-20 bg-gray-100">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-black">技能專長</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -121,10 +106,12 @@ export default function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 bg-white">
+      <section id="portfolioSection" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-black">作品集</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* TODO: 作品排版容器 */}
+          <div className="grid grid-cols-3 gap-8">
+            {/* 一項作品 */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://picsum.photos/400/250?random=3" 
@@ -140,6 +127,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* 一項作品 */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://picsum.photos/400/250?random=4" 
@@ -155,6 +143,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* 一項作品 */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://picsum.photos/400/250?random=5" 
@@ -170,6 +159,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* 一項作品 */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://picsum.photos/400/250?random=6" 
@@ -185,6 +175,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* 一項作品 */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://picsum.photos/400/250?random=7" 
@@ -200,6 +191,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            {/* 一項作品 */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://picsum.photos/400/250?random=8" 
@@ -220,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="bg-black text-white py-12">
+      <footer id="footerSection" className="bg-black text-white py-12">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
@@ -267,7 +259,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 John Doe. 保留所有權利。</p>
+            <p>&copy; 2024 John Doe.</p>
           </div>
         </div>
       </footer>
