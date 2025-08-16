@@ -15,39 +15,10 @@ npm run dev
 Ctrl + C
 ```
 
-## 路由配置計畫
-
-- `/` 首頁 
-- `/about` 關於我們 
-- `/contact` 聯絡我們
-- `/faq` 常見問題
-
-## 如何表達一個頁面
-
-- 一個頁面就是一個被放在`app`資料夾下的`page.js`
-- 每一個`page.js`都必須是一個React元件
-
-### 一個React元件
-
-```jsx
-export default function 頁面元件名稱() {
-    return (
-        <>
-            頁面內容在此表達...
-        </>
-    )
-}
-```
-
 ## 環境變數檔案 .env 範例
 
 ```
 OPENAI_API_KEY=
-FIREBASE_PROJECT_ID=
-FIREBASE_PRIVATE_KEY_ID=
-FIREBASE_PRIVATE_KEY=
-FIREBASE_CLIENT_EMAIL=
-FIREBASE_CLIENT_ID=
 ```
 
 ## 安裝Git
